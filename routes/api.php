@@ -27,3 +27,7 @@ Route::middleware(['auth:sanctum'])->group(function (){
    Route::post('assigned-user', [\App\Http\Controllers\TaskController::class, 'assignedUser']);
 
 });
+
+Route::get("cats", function(){
+    return "this is cats";
+});

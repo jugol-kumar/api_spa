@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GoogleAnalitycs;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('google-analytics', [GoogleAnalitycs::class, 'index']);
+
 
 Route::get('/', function () {
     return ['Laravel' => app()->version()];
